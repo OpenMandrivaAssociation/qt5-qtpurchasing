@@ -1,6 +1,6 @@
 %define major 5
-%define libname %mklibname qtpurchasing %{major}
-%define devname %mklibname qtpurchasing -d
+%define libname %mklibname qt5purchasing %{major}
+%define devname %mklibname qt5purchasing -d
 %define beta beta4
 
 Name:	qt5-qtpurchasing
