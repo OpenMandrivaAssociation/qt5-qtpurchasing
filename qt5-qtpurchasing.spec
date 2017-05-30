@@ -1,7 +1,7 @@
 %define major 5
 %define libname %mklibname qt5purchasing %{major}
 %define devname %mklibname qt5purchasing -d
-%define beta rc
+%define beta rc2
 
 Name:	qt5-qtpurchasing
 Version: 5.9.0
