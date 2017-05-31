@@ -5,11 +5,12 @@
 
 Name:	qt5-qtpurchasing
 Version: 5.9.0
-Release: 0.%{beta}.1
 %if "%{beta}" != "%{nil}"
 Source0: http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/qtpurchasing-opensource-src-%{version}-%{beta}.tar.xz
+Release: 0.%{beta}.1
 %else
 Source0: http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/qtpurchasing-opensource-src-%{version}.tar.xz
+Release: 1
 %endif
 Summary: Qt library for in-app purchases
 URL: https://github.com/qtproject/qtpurchasing
