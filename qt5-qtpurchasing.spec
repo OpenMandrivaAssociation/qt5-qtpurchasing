@@ -20,6 +20,7 @@ BuildRequires: qmake5
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Quick)
 BuildRequires: pkgconfig(Qt5Qml)
+BuildRequires: cmake(Qt5Concurrent)
 
 %description
 Qt library for in-app purchases
