@@ -1,12 +1,12 @@
 %define major 5
 %define libname %mklibname qt5purchasing %{major}
 %define devname %mklibname qt5purchasing -d
-%define beta %{nil}
+%define beta beta
 
 Name:	qt5-qtpurchasing
-Version: 5.9.2
+Version: 5.10.0
 %if "%{beta}" != "%{nil}"
-Source0: http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/qtpurchasing-opensource-src-%{version}-%{beta}.tar.xz
+Source0: http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/qtpurchasing-everywhere-src-%{version}-%{beta}.tar.xz
 Release: 0.%{beta}.1
 %else
 Source0: http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/qtpurchasing-opensource-src-%{version}.tar.xz
@@ -51,7 +51,7 @@ Example code for the %{name} library
 
 %prep
 %if "%{beta}" != "%{nil}"
-%setup -qn qtpurchasing-opensource-src-%{version}-%{beta}
+%setup -qn qtpurchasing-everywhere-src-%{version}-%{beta}
 %else
 %setup -qn qtpurchasing-opensource-src-%{version}
 %endif
