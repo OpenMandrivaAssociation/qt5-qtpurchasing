@@ -1,10 +1,10 @@
 %define major 5
 %define libname %mklibname qt5purchasing %{major}
 %define devname %mklibname qt5purchasing -d
-%define beta %{nil}
+%define beta beta3
 
 Name:	qt5-qtpurchasing
-Version: 5.10.1
+Version: 5.11.0
 %if "%{beta}" != "%{nil}"
 %define qttarballdir qtpurchasing-everywhere-src-%{version}-%{beta}
 Source0: http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%(echo %{beta} |sed -e "s,1$,,")/submodules/%{qttarballdir}.tar.xz
@@ -22,7 +22,7 @@ BuildRequires: qmake5
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Quick)
 BuildRequires: pkgconfig(Qt5Qml)
-BuildRequires: cmake(Qt5Concurrent)
+BuildRequires: pkgconfig(Qt5Concurrent)
 
 %description
 Qt library for in-app purchases
