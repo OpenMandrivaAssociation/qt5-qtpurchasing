@@ -25,7 +25,7 @@ BuildRequires: pkgconfig(Qt5Qml)
 BuildRequires: pkgconfig(Qt5Concurrent)
 BuildRequires: qt5-qtdoc
 BuildRequires: qt5-qttools
-BuildRequires: qdoc5
+BuildRequires: qdoc5 qt5-doc
 # For the Provides: generator
 BuildRequires: cmake >= 3.11.0-1
 
